@@ -1,0 +1,29 @@
+name: CompileLEBMod
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Run Compiler  
+        run: | 
+         wget https://raw.githubusercontent.com/DBTDerpbox/LEB-ModTools/main/LEB-ModCompiler.py
+         python LEB-ModCompiler.py
+    
+      - uses: actions/upload-artifact@v2     
+        with: 
+           name: Artifacts
+           path: "output"
+
+           
+        

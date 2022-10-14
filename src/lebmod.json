@@ -1,0 +1,17 @@
+{
+    "name": "Example LEB Mod",
+    "description": "This is an example mod, your description goes here!",
+    "authors": "DBTDerpbox",
+    "version": "1",
+    "id": "examplemod",
+    "type": "map",
+    "pack": "vanilla",
+    "hassmall": false,
+    "haslarge": true,
+    "haslargeplus": false,
+    "hasremastered": false,
+    "centercoords_small": "0 0 0",
+    "centercoords_large": "0 0 0",
+    "centercoords_largeplus": "0 0 0",
+    "centercoords_remastered": "0 0 0"
+}
